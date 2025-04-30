@@ -10,6 +10,51 @@
       background-repeat: no-repeat;
     }
 
+    .bio-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: 40px auto;
+      gap: 20px;
+    }
+    
+    .headshot img {
+      width: 180px;
+      height: auto;
+      border-radius: 50%;
+      display: block;
+    }
+    
+    .bio-text {
+      flex: 1;
+    }
+    
+    .bio-text h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .bio-text p {
+      color: #555;
+    }
+    
+    /* Make it stack vertically on small screens */
+    @media (max-width: 600px) {
+      .bio-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .headshot img {
+        margin: 0 auto;
+      }
+    }
+    
     .container {
       background-color: white;
       margin: 40px auto;
@@ -31,24 +76,27 @@
 </head>
 <body>
   <div class="container">
-    <h1>Patrick Williams</h1>
+    <h1>Patrick Williams            <a href="/personal-website/Patrick%20Williams%20Resume%202025.pdf" target="_blank">Resume</a>      <a href="https://www.linkedin.com/in/patrick-williams500/" target="_blank">LinkedIn</a></h1>
   </div>
 
   <div class="container">
     <h2>About Me</h2>
     <img src="Patrick-Headshot.jpg" alt="My photo">
-    <p>-> Major in Computer Science</p>
-    <p>-> Minor in Engineering Corporate Practice</p>
-    <p>-> Class of 2027</p>
-    <p>-> Hometown: Madison, WI</p>
-    <p>-> Passionate about cybersecurity and innovation</p>
-    <p>-> Hobbies include weightlifting, basketball, soccer, and reading</p>
+    
   </div>
-  
-  <div class="container">
-    <h2>Important links</h2>
-    <p>-> <a href="/personal-website/Patrick%20Williams%20Resume%202025.pdf" target="_blank">Resume</a></p>
-    <p>-> <a href="https://www.linkedin.com/in/patrick-williams500/" target="_blank">LinkedIn</a></p>
+
+  <div class="bio-container">
+    <div class="headshot">
+      <img src="Patrick-Headshot.jpg" alt="My Headshot">
+    </div>
+    <div class="bio-text">
+      <p>-> University of Notre Dame class of 2027</p>
+      <p>-> Major in Computer Science</p>
+      <p>-> Minor in Engineering Corporate Practice</p>
+      <p>-> From Madison, WI</p>
+      <p>-> Passionate about cybersecurity and innovation</p>
+      <p>-> Hobbies include weightlifting, basketball, soccer, and reading</p>
+    </div>
   </div>
 
   <div class="container">
