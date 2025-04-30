@@ -4,31 +4,51 @@
   <title>Patrick Williams</title>
   <style>
     body {
-      background: white;
-      font-family: Arial, sans-serif;
-      margin: 20px;
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fcoolbackgrounds.io%2F&psig=AOvVaw0_QworULi8BrdEoz6AOFLb&ust=1746130753628000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi2jY3KgI0DFQAAAAAdAAAAABAK');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
+
+    .container {
+      background-color: white;
+      margin: 40px auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
     h1 {
-      color: black;
+      color: white;
     }
-    .section {
-      margin-bottom: 20px;
-      padding: 10px;
-      border: 1px solid lightgray;
+
+    p {
+      color: white; /* Hex code for dark gray */
+    }
+
+    .important {
+      color: red;
+    }
+    
+    img {
+      max-width: 100%;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
   <h1>Patrick Williams</h1>
 
-  <div class="links">
+  <div class="container">
     <h2>Important links</h2>
     <p>-> <a href="/personal-website/Patrick%20Williams%20Resume%202025.pdf" target="_blank">Resume</a></p>
     <p>-> <a href="https://www.linkedin.com/in/patrick-williams500/" target="_blank">LinkedIn</a></p>
   </div>
   
-  <div class="about">
+  <div class="container">
     <h2>About Me</h2>
+    <img src="Patrick-Headshot.jpg" alt="My photo">
     <p>-> Major in Computer Science</p>
     <p>-> Minor in Engineering Corporate Practice</p>
     <p>-> Class of 2027</p>
@@ -37,12 +57,7 @@
     <p>-> Hobbies include weightlifting, basketball, soccer, and reading</p>
   </div>
 
-  <div class="projects">
-    <h2>Projects</h2>
-    <p>-> Yahtzee - coded in C</p>
-  </div>
-
-  <div class="skills">
+  <div class="container">
     <h2>Skills</h2>
     <p>-> C</p>
     <p>-> Python</p>
@@ -50,6 +65,11 @@
     <p>-> Excel</p>
     <p>-> MATLAB</p>
     <p>-> SolidWorks</p>
+  </div>
+
+  <div class="container">
+    <h2>Projects</h2>
+    <p>-> Yahtzee - coded in C</p>
   </div>
 </body>
 </html>
